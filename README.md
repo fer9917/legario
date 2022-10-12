@@ -14,7 +14,7 @@ Después es necesario copiar el archivo *.env.prod* y renombrarlo a *.env*
 
 ``` mv .env.prod .env ```
 
-Cambiar los siguientes valores por los del host actual
+Cambiar los siguientes valores por los del host actual en el archivo *.env*:
 
 ```
 DB_CONNECTION=mysql
@@ -48,7 +48,21 @@ Iniciar la aplicación:
 ``` npm start ```
 
 # Usuarios
-Por default existen 2 usuarios: el cliente y el admin.
+Por default existen 2 usuarios:
+
+
+Cliente: 
+
+email: ``` cliente@cliente.com  ```
+
+password: ``` 123  ```
+
+
+Administrador: 
+
+email: ``` admin@admin.com  ```
+
+password: ``` 123  ```
 
 Todos los nuevo usuarios se agregan con perfil de cliente, para modificarlo y hacerlo administrado es necesario modificar un campo de la base de datos:
 
